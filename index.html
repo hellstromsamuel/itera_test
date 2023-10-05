@@ -28,6 +28,12 @@
         font-weight: bold;
         text-decoration: underline;
       }
+
+      button {
+        background-color: yellow;
+        margin-top: 20px;
+        font-size: 10px;
+      }
     </style>
   </head>
 
@@ -40,7 +46,21 @@
       <section class="content">
         <img src="camel.jpg" alt="Nice camel" />
         <span><i>Sigurd </i> </span>
+        <button>Light mode</button>
       </section>
     </main>
   </body>
+
+  <script>
+    const button = document.querySelector("button");
+    const body = document.querySelector("body");
+    const header = document.querySelector("header");
+    const main = document.querySelector("main");
+    const img = document.querySelector("img");
+    const span = document.querySelector("span");
+
+    button.addEventListener("click", () => {
+      window.location.href = "https://www.mdg.no/";
+    });
+  </script>
 </html>
